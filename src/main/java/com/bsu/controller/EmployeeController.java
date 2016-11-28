@@ -1,7 +1,7 @@
-package com.helga.controller;
+package com.bsu.controller;
 
-import com.helga.entity.Employee;
-import com.helga.service.EmployeeService;
+import com.bsu.entity.Employee;
+import com.bsu.service.EmployeeService;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

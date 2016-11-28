@@ -1,4 +1,4 @@
-package com.helga.entity;
+package com.bsu.entity;
 
 import javax.persistence.*;
 

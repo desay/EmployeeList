@@ -1,8 +1,8 @@
-package com.helga.service.impl;
+package com.bsu.service.impl;
 
-import com.helga.dao.EmployeeDAO;
-import com.helga.entity.Employee;
-import com.helga.service.EmployeeService;
+import com.bsu.dao.EmployeeDAO;
+import com.bsu.entity.Employee;
+import com.bsu.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

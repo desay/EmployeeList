@@ -1,8 +1,8 @@
-package com.helga.dao.impl;
+package com.bsu.dao.impl;
 
-import com.helga.dao.EmployeeDAO;
-import com.helga.entity.Employee;
-import com.helga.util.HibernateUtil;
+import com.bsu.dao.EmployeeDAO;
+import com.bsu.entity.Employee;
+import com.bsu.util.HibernateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

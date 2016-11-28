@@ -1,4 +1,4 @@
-package com.helga.util;
+package com.bsu.util;
 
 import java.io.Serializable;
 import java.util.List;
@@ -24,26 +24,27 @@ public class HibernateUtil {
         return entity;
     }
 
-    public <T> T markDone(final T entity) {
+   /* public <T> T markDone(final T entity) {
         sessionFactory.getCurrentSession().update(entity);
         return entity;
     }
+    */
 
     public <T> void delete(final T entity) {
         sessionFactory.getCurrentSession().delete(entity);
     }
 
-    @SuppressWarnings("unchecked")
+    //@SuppressWarnings("unchecked")
     public <T> List<T> fetchAll(Class<T> entityClass) {
         return sessionFactory.getCurrentSession().createQuery(" FROM "+entityClass.getName()).list();
     }
 
-    @SuppressWarnings("rawtypes")
+    //@SuppressWarnings("rawtypes")
     public <T> List fetchAll(String query) {
         return sessionFactory.getCurrentSession().createSQLQuery(query).list();
     }
 
-    @SuppressWarnings("unchecked")
+    //@SuppressWarnings("unchecked")
     public <T> T fetchById(Serializable id, Class<T> entityClass) {
         return (T)sessionFactory.getCurrentSession().get(entityClass, id);
     }
